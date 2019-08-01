@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPI for Digital Retail</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+  </head>
+
+
+  <body>
+    <div class="grid-container full" style="background-color:#e6e6e6;">
+
+      <div class="grid-x grid-padding-x">
+
+
+        <h1 style="padding:10px;">KPI Dashboard</h1>
+
+
+        <div  class="cell large-12 style="padding:20px;">
+          <label>Choose your market:</label>
+          <select class="primary" name="market">
+              <option value="DE">Germany</option>
+              <option value="FR">France</option>
+          </select>
+
+          <label>Timeframe:</label>
+            <input type="radio" value="Day" name="Timeframe" id="dd"><label>Day</label>
+            <input type="date" name="oneday" id="od">
+
+
+              <input type="radio" value="frame" name="Timeframe"><label>from - to</label>
+          </div>
+          <div class="cell large-6 large-6">
+              <input type="date" name="fromday" id="frday">
+          </div>
+          <div class="cell large-6 large-6">
+              <input type="date" name="today" id="tday">
+          </div>
+
+        </div>
+
+
+    </div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+
+
+  </body>
+</html>
