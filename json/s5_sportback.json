@@ -1,0 +1,301 @@
+{
+    "key": "REVVMjEyNDAzMzY0NDQtOTI2=",
+    "carid": "DEU21240336444-926",
+    "items": [
+        {
+            "key": "title",
+            "value": "Audi S5 Sportback"
+        },
+        {
+            "key": "subtitle",
+            "value": "S5 Coupé TDI 255 kW (347 PS) tiptronic 8-stufig"
+        },
+        {
+            "key": "manuf",
+            "value": "Audi"
+        },
+        {
+            "key": "model",
+            "mbv": {
+                "code": "F5PSTA"
+            },
+            "searchcriteria": {
+                "criteria": {
+                    "key": "t_model"
+                },
+                "itemKey": "AACM"
+            },
+            "value": "Audi S5 Sportback Coupé TDI 255 kW (347 PS) tiptronic 8-stufig"
+        },
+        {
+            "key": "modelyear",
+            "value": "2020"
+        },
+        {
+            "key": "price",
+            "name": {
+                "key": "TS_NT_C_SEA_PR",
+                "href": "http://pre-vtpapi.audi.de/restapi/v1/adegwbp/configuration/texts/TS_NT_C_SEA_PR",
+                "text": {
+                    "key": "TS_NT_C_SEA_PR",
+                    "text": "Preis"
+                }
+            },
+            "unit": "EUR",
+            "value": "99.000,00"
+        },
+        {
+            "key": "motor",
+            "values": [
+                {
+                    "key": "fuel",
+                    "value": "Diesel"
+                },
+                {
+                    "key": "power.kw",
+                    "unit": "kW",
+                    "value": "255"
+                },
+                {
+                    "key": "power.ps",
+                    "unit": "PS",
+                    "value": "347"
+                },
+                {
+                    "key": "capacity",
+                    "unit": "cm³",
+                    "value": "2.967"
+                }
+            ]
+        },
+        {
+            "key": "pown",
+            "value": "1"
+        },
+        {
+            "key": "cartype",
+            "value": "Gebrauchtwagen"
+        },
+        {
+            "key": "preuse",
+            "value": "Weitere Gebrauchtwagen"
+        },
+        {
+            "key": "available_from",
+            "value": "sofort"
+        },
+        {
+            "key": "drive",
+            "value": "Allradantrieb"
+        },
+        {
+            "key": "gear",
+            "value": "Automatik"
+        },
+        {
+            "key": "color",
+            "values": [
+                {
+                    "key": "out",
+                    "mbv": {
+                        "code": "Q0"
+                    },
+                    "img": "http://pre-mediaservice.audi.com/media/cdb/data/84c473dc-bde1-475e-b8a8-3e0fd609d69f.jpg",
+                    "value": "Individuallackierung, Audi exclusive"
+                },
+                {
+                    "key": "top",
+                    "mbv": {
+                        "code": "Q0"
+                    },
+                    "value": "Individuallackierung, Audi exclusive"
+                },
+                {
+                    "key": "in",
+                    "mbv": {
+                        "code": "EI"
+                    },
+                    "img": "http://pre.handel.audi-boerse.de/2019.32.0/audi_nemo_base/assets/images/detailpage/highlights-interior-color-05.png",
+                    "values": [
+                        {
+                            "key": "seat",
+                            "value": "schwarz-schwarz-felsgrau"
+                        },
+                        {
+                            "key": "arm",
+                            "value": "schwarz-schwarz"
+                        },
+                        {
+                            "key": "carpet",
+                            "value": "schwarz"
+                        },
+                        {
+                            "key": "sky",
+                            "value": "schwarz"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "padtype",
+            "value": "Leder Feinnappa mit S-Prägung"
+        },
+        {
+            "key": "mileage",
+            "unit": "km",
+            "value": "10"
+        },
+        {
+            "key": "initialreg",
+            "value": "2019-01-01T00:00:00+01:00"
+        },
+        {
+            "key": "audicode",
+            "value": "AL4GXZPP"
+        },
+        {
+            "key": "knr",
+            "value": "336444-926"
+        },
+        {
+            "key": "dateoffer",
+            "value": "2019-08-09T09:24:20+02:00"
+        },
+        {
+            "key": "weblink",
+            "value": "http://pre.handel.audi-boerse.de/adegwbp/d|DEU21240336444-926/controller.do"
+        }
+    ],
+    "hypermediaEquips": [
+        {
+            "key": "special_equip_additional",
+            "href": "http://pre-vtpapi.audi.de/restapi/v1/adegwbp/datastore/cars/REVVMjEyNDAzMzY0NDQtOTI2=/equips/special_equip_additional",
+            "equipType": {
+                "key": "special_equip_additional",
+                "text": "Zusatzausstattungen",
+                "hypermediaFamilies": [
+                    {
+                        "key": "INSURANCE",
+                        "href": "http://pre-vtpapi.audi.de/restapi/v1/adegwbp/datastore/cars/REVVMjEyNDAzMzY0NDQtOTI2=/equips/special_equip_additional/INSURANCE",
+                        "equipFamily": {
+                            "key": "INSURANCE",
+                            "text": "Typenklassen",
+                            "hypermediaItems": [
+                                {
+                                    "key": "1",
+                                    "href": "http://pre-vtpapi.audi.de/restapi/v1/adegwbp/datastore/cars/REVVMjEyNDAzMzY0NDQtOTI2=/equips/special_equip_additional/INSURANCE/1",
+                                    "equipItem": {
+                                        "key": "1",
+                                        "text": "Haftpflicht",
+                                        "details": ""
+                                    }
+                                },
+                                {
+                                    "key": "2",
+                                    "href": "http://pre-vtpapi.audi.de/restapi/v1/adegwbp/datastore/cars/REVVMjEyNDAzMzY0NDQtOTI2=/equips/special_equip_additional/INSURANCE/2",
+                                    "equipItem": {
+                                        "key": "2",
+                                        "text": "Teilkasko",
+                                        "details": ""
+                                    }
+                                },
+                                {
+                                    "key": "3",
+                                    "href": "http://pre-vtpapi.audi.de/restapi/v1/adegwbp/datastore/cars/REVVMjEyNDAzMzY0NDQtOTI2=/equips/special_equip_additional/INSURANCE/3",
+                                    "equipItem": {
+                                        "key": "2",
+                                        "text": "Vollkasko",
+                                        "details": ""
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "key": "USEDCARS",
+                        "href": "http://pre-vtpapi.audi.de/restapi/v1/adegwbp/datastore/cars/REVVMjEyNDAzMzY0NDQtOTI2=/equips/special_equip_additional/USEDCARS",
+                        "equipFamily": {
+                            "key": "USEDCARS",
+                            "text": "Weitere Bemerkungen des Anbieters",
+                            "hypermediaItems": [
+                                {
+                                    "key": "1",
+                                    "href": "http://pre-vtpapi.audi.de/restapi/v1/adegwbp/datastore/cars/REVVMjEyNDAzMzY0NDQtOTI2=/equips/special_equip_additional/USEDCARS/1",
+                                    "equipItem": {
+                                        "key": "1",
+                                        "text": "Weitere Bemerkungen des Anbieters",
+                                        "details": "Antiblockiersystem, Elektronische Wegfahrsperre, Fensterheber elektrisch\n\n\n\n"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "hypermediadealer": {
+        "key": "DEU21240",
+        "href": "http://pre-vtpapi.audi.de/restapi/v1/adegwbp/datastore/dealer/DEU21240",
+        "dealer": {
+            "key": "DEU21240",
+            "country": "DEU",
+            "hid": "21240",
+            "chain": {
+                "key": "ZFF"
+            },
+            "gvoStatus": "HS",
+            "items": [
+                {
+                    "key": "name",
+                    "value": "Audi Frankfurt GmbH Audi Zentrum Frankfurt Standort Mitte"
+                },
+                {
+                    "key": "street",
+                    "value": "Mainzer Landstraße 410"
+                },
+                {
+                    "key": "zip",
+                    "value": "60326"
+                },
+                {
+                    "key": "city",
+                    "value": "Frankfurt"
+                },
+                {
+                    "key": "phone",
+                    "value": "+49 69 9511440"
+                },
+                {
+                    "key": "email",
+                    "value": "info@frankfurt.audi"
+                },
+                {
+                    "key": "idregion",
+                    "value": "182"
+                }
+            ]
+        }
+    },
+    "media": [
+        {
+            "key": "detailpdf",
+            "href": "http://pre-vtpapi.audi.de/restapi/v1/adegwbp/datastore/cars/REVVMjEyNDAzMzY0NDQtOTI2=/media/detailpdf",
+            "mediumGroup": {
+                "key": "detailpdf",
+                "media": [
+                    {
+                        "key": "default",
+                        "href": "http://pre-vtpapi.audi.de/restapi/v1/adegwbp/datastore/cars/REVVMjEyNDAzMzY0NDQtOTI2=/media/detailpdf/default",
+                        "medium": {
+                            "key": "default",
+                            "href": "http://pre.handel.audi-boerse.de/adegwbp/d|DEU21240336444-926/controller.do?act=print&v=6&embed=popup&export=pdf",
+                            "contenttype": "application/pdf"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

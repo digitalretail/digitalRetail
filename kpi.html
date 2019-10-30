@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPI for Digital Retail</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+  </head>
+
+
+  <body>
+    <div class="grid-container full" style="background-color:#e6e6e6;">
+
+      <div class="grid-x grid-padding-x">
+
+
+        <h1 style="padding:10px;">KPI Dashboard</h1>
+
+        <div class="cell small-12" id="feedback" style="background-color:grey">
+            <p>Please choose a market</p>
+        </div>
+
+
+        <div  class="cell small-12" style="padding:20px;">
+          <label><h4>Choose your market:</h4></label>
+          <select class="primary" name="market" id="market" onchange="getMarket()">
+              <option value=""></option>
+              <option value="DE">Germany</option>
+              <option value="FR">France</option>
+          </select>
+        </div>
+
+        <div class="cell small-12" style="padding:20px;border-top:1px solid;">
+          <label><h4>Timeframe:</h4></label>
+            <input type="radio" value="Day" name="timeframe" id="day" onchange="changeSelection()"><label>Day</label>
+            <input type="date" name="oneday" id="oneday">
+        </div>
+        <div class="cell small-12" style="padding-left:20px; padding-right:20px; padding-bottom:20px;">
+              <input type="radio" value="frame" name="timeframe" id="frame" onchange="changeSelection()"><label>from - to</label>
+
+              <div class="cell small-6 small-6">
+                <input type="date" name="fromday" id="fromday">
+              </div>
+              <div class="cell small-6 small-6">
+                <input type="date" name="today" id="today">
+              </div>
+        </div>
+    </div>
+
+
+  </div>
+
+  <script type="text/javascript">
+
+    function changeSelection(){
+      console.log($('#timeframe').val())
+      if($('#day').is(":checked")) {
+        $('#oneday').fadeIn();
+        $('#fromday').fadeOut();
+        $('#today').fadeOut();
+      }
+      else{
+        $('#oneday').fadeOut();
+        $('#fromday').fadeIn();
+        $('#today').fadeIn();
+      }
+    }
+
+
+    function getMarket(){
+
+
+      if($('#market').val() != ""){
+
+        alert("Sie haben den Markt " + $('#market').val() + " gewählt");
+        $('#feedback').html("market selected");
+        $('#feedback').css("background-color","green");
+      }
+      else{
+        $('#feedback').html("no market selected!");
+        $('#feedback').css("background-color","red");
+      }
+    }
+
+
+  </script>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+
+
+  </body>
+</html>
