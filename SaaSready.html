@@ -1,415 +1,86 @@
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DR for Markets</title>
+    <title>SaaS-Ready</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/font-awesome.css">
 
-
   </head>
-
-  <style>
-
-.audiextendedbold{
-  font-family: Audi type extended;
-   font-weight:bold;
-   font-size: 22px;
- }
-
- .audiscreennormal{
-   font-family: Audi type screen ;
-    font-size: 16px;
-  }
-
-   </style>
-
 
   <body>
 
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="large-9 cell"> <br>
+          <h2>Checklist for SaaS-Ready</h2>
+        </div>
+        <div class="large-3 cell">
+          <img src="assets/rings1.png" width="75" height="50" alt="AUDI AG">
+        </div>
+      </div>
 
-      <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="large-6 cell">
+          <div class="callout" style="background-color:#b3b3b3;">
+            <h3>Please find here the checklist for SaaS-Ready </h3>
+            <p>All the needed information are listed and sorted below in different sections.<br>
+            Please also see our presentation for "Basic information"</p>
 
-          <div class="grid-x">
-           <div class="cell small-10"></div>
-           <div class="cell small-2">
-               <br>
-             <img style="width:50%;" src="elsie/Logos/rings.png"> </div>
+            <p><a href="http://foundation.zurb.com/docs">Basic Information</a><br />Everything you need to know about basics of SaaS.</p>
+
+          </div>
+        </div>
+          <div class="large-6 cell">
+            <img src="assets/img1.webp" width="365" height="800" alt="Img1">
           </div>
 
-
-          <br>
-          <br>
-
-
-          <div class="large-12 cell" ><div class="audiextendedbold">1. Operations</div>
-          <br>
-          <div class="large-6 cell audiscreennormal" >
-            1.1. A local supplier for the 1st and 2nd level support of the DRMs has been identified.
-          </div>
-
-          <div class="large-6 cell audiscreennormal" >
-            <input type="radio" name="12support" value="Yes" id="12support" onchange="calculatereadiness(25)">
-            <label for="12support">Yes</label>
-
-            <input type="radio" name="12support" value="No" id="12support" onchange="calculatereadiness(-25)">
-            <label for="12support">No</label>
-          </div>
-
-          <br>
-          <div class="large-6 cell audiscreennormal" >
-            1.2. A hardware purchasing process has been identified.   <br>
-            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hardware purchasing can be done by the importer, a supplier or the dealer himself.
-          </div>
-
-          <div class="large-6 cell audiscreennormal" >
-            <input type="radio" name="HWpurchasing" value="Yes" id="HWpurchasing" onchange="calculatereadiness(25)">
-            <label for="HWpurchasing">Yes</label>
-
-            <input type="radio" name="HWpurchasing" value="No" id="HWpurchasing" onchange="calculatereadiness(-25)">
-            <label for="HWpurchasing">No</label>
-          </div>
-          <hr>
-
-          <div class="large-12 cell" ><div class="audiextendedbold">2. Rollout preparation</div>
-          <br>
-          <div class="large-6 cell audiscreennormal" >
-            2.1. Are the dealers informed about the migration of their existing DRMs to SaaS?
-          </div>
-
-          <div class="large-6 cell audiscreennormal" >
-            <input type="radio" name="dealersinformedmigration" value="Yes" id="dealersinformedmigration" onchange="calculatereadiness(25)">
-            <label for="dealersinformedmigration">Yes</label>
-
-            <input type="radio" name="dealersinformedmigration" value="No" id="dealersinformedmigration" onchange="calculatereadiness(-25)">
-            <label for="dealersinformedmigration">No</label>
-          </div>
-
-          <br>
-          <div class="large-6 cell audiscreennormal" >
-            2.2. Did you define a plan and timeline on how to train the salesmen to use the DRM system within the sales process?
-          </div>
-
-          <div class="large-6 cell audiscreennormal" >
-            <input type="radio" name="trainingsalesmen" value="Yes" id="trainingsalesmen" onchange="calculatereadiness(25)">
-            <label for="trainingsalesmen">Yes</label>
-
-            <input type="radio" name="trainingsalesmen" value="No" id="trainingsalesmen" onchange="calculatereadiness(-25)">
-            <label for="trainingsalesmen">No</label>
-          </div>
-
-          <hr>
-
-          <input type="text" class="large-6 cell audiscreennormal" value="Save" class="button alert" style="background-color:#bb0a30; font-weight: bold; color:#FFFFFF; text-align: center"> </input>
-
-<div id="saascircle" class="large-6 cell audiscreennormal" style="color:red;" >
-
-</div>
-</div>
-</div>
-</div>
-
-<script type="text/javascript">
-
-var x=0;
-
-
-function calculatereadiness(yesorno){
-
-    x=(x+yesorno);
-
-    if(x<0){
-      x=0
-      }
-
-    if(x==100){
-      $('#saascircle').html("Congrats! You're SaaS ready!");
-      var SCREEN_WIDTH = window.innerWidth,
-    SCREEN_HEIGHT = window.innerHeight,
-    mousePos = {
-        x: 400,
-        y: 300
-    },
-
-    // create canvas
-    canvas = document.createElement('canvas'),
-    context = canvas.getContext('2d'),
-    particles = [],
-    rockets = [],
-    MAX_PARTICLES = 400,
-    colorCode = 0;
-
-// init
-$(document).ready(function() {
-    document.body.appendChild(canvas);
-    canvas.width = SCREEN_WIDTH;
-    canvas.height = SCREEN_HEIGHT;
-    setInterval(launch, 800);
-    setInterval(loop, 1000 / 50);
-});
-
-// update mouse position
-$(document).mousemove(function(e) {
-    e.preventDefault();
-    mousePos = {
-        x: e.clientX,
-        y: e.clientY
-    };
-});
-
-// launch more rockets!!!
-$(document).mousedown(function(e) {
-    for (var i = 0; i < 5; i++) {
-        launchFrom(Math.random() * SCREEN_WIDTH * 2 / 3 + SCREEN_WIDTH / 6);
-    }
-});
-
-function launch() {
-    launchFrom(mousePos.x);
-}
-
-function launchFrom(x) {
-    if (rockets.length < 10) {
-        var rocket = new Rocket(x);
-        rocket.explosionColor = Math.floor(Math.random() * 360 / 10) * 10;
-        rocket.vel.y = Math.random() * -3 - 4;
-        rocket.vel.x = Math.random() * 6 - 3;
-        rocket.size = 8;
-        rocket.shrink = 0.999;
-        rocket.gravity = 0.01;
-        rockets.push(rocket);
-    }
-}
-
-function loop() {
-    // update screen size
-    if (SCREEN_WIDTH != window.innerWidth) {
-        canvas.width = SCREEN_WIDTH = window.innerWidth;
-    }
-    if (SCREEN_HEIGHT != window.innerHeight) {
-        canvas.height = SCREEN_HEIGHT = window.innerHeight;
-    }
-
-    // clear canvas
-    context.fillStyle = "rgba(0, 0, 0, 0.05)";
-    context.fillRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-
-    var existingRockets = [];
-
-    for (var i = 0; i < rockets.length; i++) {
-        // update and render
-        rockets[i].update();
-        rockets[i].render(context);
-
-        // calculate distance with Pythagoras
-        var distance = Math.sqrt(Math.pow(mousePos.x - rockets[i].pos.x, 2) + Math.pow(mousePos.y - rockets[i].pos.y, 2));
-
-        // random chance of 1% if rockets is above the middle
-        var randomChance = rockets[i].pos.y < (SCREEN_HEIGHT * 2 / 3) ? (Math.random() * 100 <= 1) : false;
-
-/* Explosion rules
-             - 80% of screen
-            - going down
-            - close to the mouse
-            - 1% chance of random explosion
-        */
-        if (rockets[i].pos.y < SCREEN_HEIGHT / 5 || rockets[i].vel.y >= 0 || distance < 50 || randomChance) {
-            rockets[i].explode();
-        } else {
-            existingRockets.push(rockets[i]);
-        }
-    }
-
-    rockets = existingRockets;
-
-    var existingParticles = [];
-
-    for (var i = 0; i < particles.length; i++) {
-        particles[i].update();
-
-        // render and save particles that can be rendered
-        if (particles[i].exists()) {
-            particles[i].render(context);
-            existingParticles.push(particles[i]);
-        }
-    }
-
-    // update array with existing particles - old particles should be garbage collected
-    particles = existingParticles;
-
-    while (particles.length > MAX_PARTICLES) {
-        particles.shift();
-    }
-}
-
-function Particle(pos) {
-    this.pos = {
-        x: pos ? pos.x : 0,
-        y: pos ? pos.y : 0
-    };
-    this.vel = {
-        x: 0,
-        y: 0
-    };
-    this.shrink = .97;
-    this.size = 2;
-
-    this.resistance = 1;
-    this.gravity = 0;
-
-    this.flick = false;
-
-    this.alpha = 1;
-    this.fade = 0;
-    this.color = 0;
-}
-
-Particle.prototype.update = function() {
-    // apply resistance
-    this.vel.x *= this.resistance;
-    this.vel.y *= this.resistance;
-
-    // gravity down
-    this.vel.y += this.gravity;
-
-    // update position based on speed
-    this.pos.x += this.vel.x;
-    this.pos.y += this.vel.y;
-
-    // shrink
-    this.size *= this.shrink;
-
-    // fade out
-    this.alpha -= this.fade;
-};
-
-Particle.prototype.render = function(c) {
-    if (!this.exists()) {
-        return;
-    }
-
-    c.save();
-
-    c.globalCompositeOperation = 'lighter';
-
-    var x = this.pos.x,
-        y = this.pos.y,
-        r = this.size / 2;
-
-    var gradient = c.createRadialGradient(x, y, 0.1, x, y, r);
-    gradient.addColorStop(0.1, "rgba(255,255,255," + this.alpha + ")");
-    gradient.addColorStop(0.8, "hsla(" + this.color + ", 100%, 50%, " + this.alpha + ")");
-    gradient.addColorStop(1, "hsla(" + this.color + ", 100%, 50%, 0.1)");
-
-    c.fillStyle = gradient;
-
-    c.beginPath();
-    c.arc(this.pos.x, this.pos.y, this.flick ? Math.random() * this.size : this.size, 0, Math.PI * 2, true);
-    c.closePath();
-    c.fill();
-
-    c.restore();
-};
-
-Particle.prototype.exists = function() {
-    return this.alpha >= 0.1 && this.size >= 1;
-};
-
-function Rocket(x) {
-    Particle.apply(this, [{
-        x: x,
-        y: SCREEN_HEIGHT}]);
-
-    this.explosionColor = 0;
-}
-
-Rocket.prototype = new Particle();
-Rocket.prototype.constructor = Rocket;
-
-Rocket.prototype.explode = function() {
-    var count = Math.random() * 10 + 80;
-
-    for (var i = 0; i < count; i++) {
-        var particle = new Particle(this.pos);
-        var angle = Math.random() * Math.PI * 2;
-
-        // emulate 3D effect by using cosine and put more particles in the middle
-        var speed = Math.cos(Math.random() * Math.PI / 2) * 15;
-
-        particle.vel.x = Math.cos(angle) * speed;
-        particle.vel.y = Math.sin(angle) * speed;
-
-        particle.size = 10;
-
-        particle.gravity = 0.2;
-        particle.resistance = 0.92;
-        particle.shrink = Math.random() * 0.05 + 0.93;
-
-        particle.flick = true;
-        particle.color = this.explosionColor;
-
-        particles.push(particle);
-    }
-};
-
-Rocket.prototype.render = function(c) {
-    if (!this.exists()) {
-        return;
-    }
-
-    c.save();
-
-    c.globalCompositeOperation = 'lighter';
-
-    var x = this.pos.x,
-        y = this.pos.y,
-        r = this.size / 2;
-
-    var gradient = c.createRadialGradient(x, y, 0.1, x, y, r);
-    gradient.addColorStop(0.1, "rgba(255, 255, 255 ," + this.alpha + ")");
-    gradient.addColorStop(1, "rgba(0, 0, 0, " + this.alpha + ")");
-
-    c.fillStyle = gradient;
-
-    c.beginPath();
-    c.arc(this.pos.x, this.pos.y, this.flick ? Math.random() * this.size / 2 + this.size / 2 : this.size, 0, Math.PI * 2, true);
-    c.closePath();
-    c.fill();
-
-    c.restore();
-};
-
-    }else {
-      $('#saascircle').html(x);
-    }
-
-
-}
-
-
-
-</script>
-
-
-
+        </div>
+
+          <h5>Step 1 - Initial Information </h5>
+
+          <form>
+            <div class="grid-x grid-padding-x">
+                  <label>Country</label>
+                  <select>
+                    <option value="Germany">Germany</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Switzerland">Switzerland</option>
+                  </select>
+
+                <label>Importer Name</label>
+                <input type="text" placeholder="please insert your importer name" />
+              </div>
+
+            <div class="grid-x grid-padding-x">
+
+              <div class="large-9 medium-6 cell">
+                <label>Please check the following points</label>
+                <input id="checkbox1" type="checkbox"><label for="checkbox1">I already read the presentation "basic installation"</label> <br>
+                <input id="checkbox2" type="checkbox"><label for="checkbox2">I already identified local hardware sourcing process</label>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+
+                <label>Open questions</label>
+                <textarea placeholder="please let us know your open questions"></textarea>
+
+
+                        <a href="#" class="secondary button">Send information</a></p>
+
+            </div>
+          </form>
+        </div>
 
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
-    <script  src="js/firework.js"></script>
   </body>
-
-
-
-
-
-
-
-
-
 </html>
